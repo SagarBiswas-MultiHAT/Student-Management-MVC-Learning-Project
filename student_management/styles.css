@@ -1,0 +1,162 @@
+/* Basic app styles */
+:root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --primary-600: #1d4ed8;
+    --danger: #dc2626;
+    --danger-600: #b91c1c;
+    --border: #e5e7eb;
+    --shadow: 0 2px 8px rgba(0, 0, 0, .06);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 960px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0 0 16px;
+}
+
+.actions-bar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 12px 0 16px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.table th,
+.table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+.table th {
+    background: #f3f4f6;
+    font-weight: 600;
+    color: #111827;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-600);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.btn-secondary:hover {
+    background: #f9fafb;
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: var(--danger-600);
+}
+
+.form {
+    background: var(--card);
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    max-width: 560px;
+}
+
+.form .field {
+    margin-bottom: 12px;
+}
+
+.form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.form .actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.message-error {
+    color: var(--danger-600);
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin: 8px 0 12px;
+}
+
+.card {
+    background: var(--card);
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
