@@ -130,6 +130,3 @@ students
 - Introduce a simple router class instead of query strings
 - Extract a base controller and basic view renderer for reusability
 
-## License
-
-MIT — do whatever, attribution welcome.
